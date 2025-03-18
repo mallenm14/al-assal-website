@@ -1,14 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @import "tailwindcss";
 
 @theme {
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-roboto: Roboto, sans-serif;
+  --font-opensans: Open, sans-serif;
+  --font-playfair: Playfair, serif;
+
+  --color-primary-pale: #E79299; 
+  --color-primary-strong: #AC2631;
+  --color-primary-dark: #64161D;
+  --color-primary: #b61624;
+
+  --color-tertiary-pale: #6C95CE; 
+  --color-tertiary-strong: #3871C1;
+  --color-tertiary-dark: #214271;
+  --color-tertiary: #5587ce;
+
+  --color-secondary-pale: #8184CA; 
+  --color-secondary-strong: #192E4B;
+  --color-secondary-dark: #15263F;
+  --color-secondary: #1D3557;
+
+  --color-honeydew: #F1FAEE;
 }
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.logos-slide {
+  animation: slide 100s linear infinite;
+}
+
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -21,4 +59,6 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  max-width: 100vw;
 }
