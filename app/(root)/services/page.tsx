@@ -2,6 +2,7 @@ import CustomBtn from '@/app/components/CustomBtn'
 import PageHeading from '@/app/components/PageHeading'
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const Services = () => {
   return (
@@ -10,39 +11,39 @@ const Services = () => {
         <div className='h-[50vh] w-full overflow-hidden relative flex'>
           <div className='h-full w-full bg-secondary absolute -skew-x-20 -translate-x-1/2 z-10'></div>
           <p className='w-1/2 px-10 lg:px-16 h-full flex justify-center items-center lg:text-3xl text-gray-100 font-bold z-20'>Comprehensive Recruitment Solutions Tailored to Industry Needs</p>
-          <div className='w-2/3 h-full relative'>
-          <img src="/images/about/Picture5.jpg" alt="Al Assal Recruitment Team" className='absolute m-auto right-[-9999px] left-[-9999px] top-[-9999px] bottom-[-9999px]' /></div>
+          <div className='w-2/3 h-full relative '>
+          <Image  unoptimized={true} fill src="/images/about/Picture5.jpg" alt="Al Assal Recruitment Team" className='object-cover absolute m-auto right-[-9999px] left-[-9999px] top-[-9999px] bottom-[-9999px]' /></div>
         </div>
       </section>
       <section className='w-full'>
         <PageHeading>Our Services</PageHeading>
-        <div className='w-[70vw] mx-auto flex lg:flex-row gap-20 justify-center'>
-        <div className='bg-gray-200 flex-1 h-96 shadow-lg flex flex-col justify-between'>
+        <div className='w-[70vw] mx-auto flex flex-col lg:flex-row gap-20 justify-center mb-20'>
+          <div className='bg-gray-200 flex-1 h-96 shadow-lg flex flex-col justify-between'>
               <div className='px-10 flex flex-col justify-between h-2/5 p-5'>
               <h4 className='text-xl font-bold text-primary'>AL ASSAL RECRUITMENT</h4>
               <CustomBtn className='border border-gray-900 text-gray-900 hover:bg-primary hover:border-primary hover:text-white py-2 px-5 w-32 '>Learn More</CustomBtn>
               </div>
-              <div className='h-3/5 overflow-hidden bg-[url(/images/about/mission.jpg)] bg-center bg-cover saturate-150'>
-              {/* <img src="/images/about/mission.jpg" alt="" className='saturate-150' /> */}
+              <div className='h-3/5 overflow-hidden bg-center bg-cover saturate-150'>
+              <Image fill src="/images/about/mission.jpg" alt="" className='saturate-120' />
               </div>
+          </div>
+          <div className='bg-gray-200 flex-1 h-96 shadow-lg flex flex-col justify-between'>
+            <div className='px-10 flex flex-col justify-between h-2/5  p-5'>
+            <h4 className='text-xl font-bold text-primary'>SKILLS TRAINING</h4>
+            <CustomBtn className='border border-gray-900 text-gray-900 hover:bg-primary hover:border-primary hover:text-white py-2 px-5 w-32 '>Learn More</CustomBtn>
             </div>
-            <div className='bg-gray-200 flex-1 h-96 shadow-lg flex flex-col justify-between'>
-              <div className='px-10 flex flex-col justify-between h-2/5  p-5'>
-              <h4 className='text-xl font-bold text-primary'>SKILLS TRAINING</h4>
-              <CustomBtn className='border border-gray-900 text-gray-900 hover:bg-primary hover:border-primary hover:text-white py-2 px-5 w-32 '>Learn More</CustomBtn>
-              </div>
-              <div className='h-3/5 overflow-hidden relative'>
-                <img src="/images/about/training.jpg" alt="" className='saturate-150 absolute -rotate-90 object-cover m-auto right-[-9999px] left-[-9999px] top-[-9999px] bottom-[-9999px]' /> 
-              </div>
+            <div className='h-3/5 overflow-hidden relative'>
+              <Image width={500} height={500} src="/images/about/training.jpg" alt="" className='saturate-150 absolute -rotate-90 object-cover m-auto right-[-9999px] left-[-9999px] top-[-9999px] bottom-[-9999px]' /> 
             </div>
-            <div className='bg-gray-200 flex-1 h-96 shadow-lg flex flex-col justify-between'>
-              <div className='px-10 flex flex-col justify-between h-2/5 p-5'>
-              <h4 className='text-xl font-bold text-primary'>UNDERSTANDING RECRUITMENT NEEDS</h4>
-              <CustomBtn className='border border-gray-900 text-gray-900 hover:bg-primary hover:border-primary hover:text-white py-2 px-5 w-32'>Learn More</CustomBtn>
-              </div>
-              <div className='h-3/5 overflow-hidden bg-[url(/images/about/Picture2.jpg)] bg-center bg-cover saturate-150'>
-              </div>
+          </div>
+          <div className='bg-gray-200 flex-1 h-96 shadow-lg flex flex-col justify-between'>
+            <div className='px-10 flex flex-col justify-between h-2/5 p-5'>
+            <h4 className='text-xl font-bold text-primary'>UNDERSTANDING RECRUITMENT NEEDS</h4>
+            <CustomBtn className='border border-gray-900 text-gray-900 hover:bg-primary hover:border-primary hover:text-white py-2 px-5 w-32'>Learn More</CustomBtn>
             </div>
+            <div className='h-3/5 overflow-hidden bg-[url(/images/about/Picture2.jpg)] bg-center bg-cover saturate-120'>
+            </div>
+          </div>
 
         </div>
       </section>
@@ -73,74 +74,74 @@ const Services = () => {
       <section className='w-full min-h-screen'>
         <PageHeading>Companies We Work With</PageHeading>
         <div className='w-[70vw] h-full pb-20 mx-auto flex flex-wrap gap-10 justify-center'>
-          <img src="/images/logo/16022348465380.png" className='w-40 h-14' alt="Dutest Qatar W.L.L. Logo" />
-          <img src="/images/logo/ABDUL LATIF JAMEEL HOSPITAL.png" className='w-20 h-14' alt="ABDUL LATIF JAMEEL HOSPITAL Logo" />
-          <img src="/images/logo/AJEX LOGISTIC SERVICES.png" className='w-24 h-14' alt="AJEX LOGISTIC SERVICES Logo" />
-          <img src="/images/logo/AJLAN & BROTHERS.jpg" className='w-40 h-20' alt="AJLAN & BROTHERS Logo" />
-          <img src="/images/logo/AL FANAR COMPANY.png" className='w-32 h-20' alt="AL FANAR COMPANY Logo" />
-          <img src="/images/logo/AL GHANDI AUTO.png" className='w-30 h-20' alt="AL GHANDI AUTO Logo" />
-          <img src="/images/logo/AL HARAMAIN MEDICAL COMPLEX.jpg" className='w-30 h-20' alt="AL HARAMAIN MEDICAL COMPLEX Logo" />
-          <img src="/images/logo/AL HATAB BAKERY.png" className='w-30 h-20' alt="AL HATAB BAKERY Logo" />
-          <img src="/images/logo/Al Majdouie.png" className='w-30 h-20' alt="Al Majdouie Logo" />
-          <img src="/images/logo/Al metals.jpg" className='w-30 h-20' alt="Al metals Logo" />
-          <img src="/images/logo/Anjum.jpg" className='w-30 h-20' alt="Anjum Logo" />
-          <img src="/images/logo/ARABIAN INTERNATIONAL COMPANY.jfif" className='w-30 h-20' alt="ARABIAN INTERNATIONAL COMPANY Logo" />
-          <img src="/images/logo/Arabian Metal Industires.JPG" className='w-30 h-20' alt="Arabian Metal Industires Logo" />
-          <img src="/images/logo/avjzz8axdsrdvrubf4hq.webp" className='w-30 h-20' alt="EI Engineering Group Logo" />
-          <img src="/images/logo/Aztracon.jpg" className='w-30 h-20' alt="Aztracon Logo" />
-          <img src="/images/logo/Badan Agricultural.jpg" className='w-30 h-20' alt="Badan Agricultural Logo" />
-          <img src="/images/logo/bindajim_co_logo.jfif" className='w-30 h-20' alt="bindajim co Logo" />
-          <img src="/images/logo/Carrier.png" className='w-30 h-20' alt="Carrier Logo" />
-          <img src="/images/logo/CGC.KW_BIG.png" className='w-30 h-20' alt="CGC.KW_BIG Logo" />
-          <img src="/images/logo/changan.JPG" className='w-30 h-20' alt="changan Logo" />
-          <img src="/images/logo/Chrysler.webp" className='w-30 h-20' alt="Chrysler Logo" />
-          <img src="/images/logo/Daewoo_E&C_CI_(eng).svg.png" className='w-28 h-16' alt="DaewooE&CCI Logo" />
-          <img src="/images/logo/Dammam Pharma.png" className='w-28 h-16' alt="Dammam Pharma Logo" />
-          <img src="/images/logo/download (3).jpeg" className='w-40 h-20' alt="Alesayi Logo" />
-          <img src="/images/logo/Dr. Bassam Al-Hemsi Medical Cebte.png" className='w-28 h-16' alt="Dr. Bassam Al-Hemsi Medical Cebte Logo" />
-          <img src="/images/logo/eram engineering.jpg" className='w-28 h-16' alt="Eram Engineering Logo" />
-          <img src="/images/logo/GS.png" className='w-28 h-16' alt="GS Logo" />
-          <img src="/images/logo/honda.webp" className='w-28 h-16' alt="Honda Logo" />
-          <img src="/images/logo/Hyundai_Heavy_Industries-Logo.wine.svg" className='w-28 h-16' alt="Hyundai Heavy Industries Logo" />
-          <img src="/images/logo/images.jpg" className='w-28 h-16' alt="Images Logo" />
-          <img src="/images/logo/Jamal 1.png" className='w-28 h-16' alt="Jamal 1 Logo" />
-          <img src="/images/logo/Juffali.png" className='w-28 h-16' alt="Juffali Logo" />
-          <img src="/images/logo/Lexus.png" className='w-28 h-16' alt="Lexus Logo" />
-          <img src="/images/logo/liebherr.JPG" className='w-28 h-16' alt="Liebherr Logo" />
-          <img src="/images/logo/logo with logistic en.jpg" className='w-28 h-16' alt="Logistic Logo" />
-          <img src="/images/logo/Madarek.jpeg" className='w-28 h-16' alt="Madarek Logo" />
-          <img src="/images/logo/MAYYAR UNITED Support Services.png" className='w-28 h-16' alt="MAYYAR UNITED Support Services Logo" />
-          <img src="/images/logo/MercedesBenz.jpg" className='w-28 h-16' alt="Mercedes Benz Logo" />
-          <img src="/images/logo/Mesc.png" className='w-28 h-16' alt="Mesc Logo" />
-          <img src="/images/logo/Movenpick-new-logo-916x515.jpg" className='w-28 h-16' alt="Movenpick Logo" />
-          <img src="/images/logo/Mtex.png" className='w-28 h-16' alt="Mtex Logo" />
-          <img src="/images/logo/Naqua_logo.png" className='w-28 h-16' alt="Naqua Logo" />
-          <img src="/images/logo/samsung heavy industries.png" className='w-42 h-20' alt="Samsung Logo" />
-          <img src="/images/logo/Pannon Work.jpg" className='w-28 h-16' alt="Pannon Work Logo" />
-          <img src="/images/logo/pngegg.png" className='w-28 h-16' alt="Pngegg Logo" />
-          <img src="/images/logo/pngwing.com.png" className='w-28 h-16' alt="Pngwing Logo" />
-          <img src="/images/logo/Prodar 2.png" className='w-28 h-16' alt="Prodar 2 Logo" />
-          <img src="/images/logo/Pwc.png" className='w-28 h-16' alt="PWC Logo" />
-          <img src="/images/logo/Qassim_University_logo.svg.png" className='w-28 h-16' alt="Qassim University Logo" />
-          <img src="/images/logo/Sakura.png" className="w-32 h-28" alt="Sakura Logo" />
-          <img src="/images/logo/Samsung SDI.jpg" className="w-28 h-16" alt="Samsung SDI Logo" />
-          <img src="/images/logo/samsung-engineering3687.logowik.com.webp" className="w-42   h-24" alt="Samsung Engineering Logowik Logo" />
-          <img src="/images/logo/samsung.png" className="w-28 h-16" alt="Samsung Logo" />
-          <img src="/images/logo/sasung engineering.png" className="w-28 h-16" alt="Sasung Engineering Logo" />
-          <img src="/images/logo/Saudi Master Baker.JPG" className="w-28 h-16" alt="Saudi Master Baker Logo" />
-          <img src="/images/logo/Saudi Paper Group.jpg" className="w-28 h-16" alt="Saudi Paper Group Logo" />
-          <img src="/images/logo/saudibio-logo-201x90@2x.png" className="w-28 h-16" alt="Saudibio Logo" />
-          <img src="/images/logo/Savage-Logo.jpg" className="w-28 h-16" alt="Savage Logo" />
-          <img src="/images/logo/Schneider-Electric-logo-jpg-.png" className="w-28 h-16" alt="Schneider Electric Logo" />
-          <img src="/images/logo/Siemens-logo-500x281.png" className="w-28 h-16" alt="Siemens Logo" />
-          <img src="/images/logo/tenas.jpg" className="w-28 h-16" alt="Tenas Logo" />
-          <img src="/images/logo/Teyseer Motors WLL.jpg" className="w-28 h-16" alt="Teyseer Motors WLL Logo" />
-          <img src="/images/logo/Tulip Inn.png" className="w-28 h-16" alt="Tulip Inn Logo" />
-          <img src="/images/logo/United Motors Group.png" className="w-28 h-16" alt="United Motors Group Logo" />
-          <img src="/images/logo/URE Industrial.jpg" className="w-28 h-16" alt="URE Industrial Logo" />
-          <img src="/images/logo/Venus.png" className="w-28 h-16" alt="Venus Logo" />
-          <img src="/images/logo/Westin.png" className="w-28 h-16" alt="Westin Logo" />
-          <img src="/images/logo/WPPCO.png" className="w-28 h-16" alt="WPPCO Logo" />
+          <Image width={250} height={200} src="/images/logo/16022348465380.png" className='w-40 h-14' alt="Dutest Qatar W.L.L. Logo" />
+          <Image width={250} height={200} src="/images/logo/ABDUL LATIF JAMEEL HOSPITAL.png" className='w-20 h-14' alt="ABDUL LATIF JAMEEL HOSPITAL Logo" />
+          <Image width={250} height={200} src="/images/logo/AJEX LOGISTIC SERVICES.png" className='w-24 h-14' alt="AJEX LOGISTIC SERVICES Logo" />
+          <Image width={250} height={200} src="/images/logo/AJLAN & BROTHERS.jpg" className='w-40 h-20' alt="AJLAN & BROTHERS Logo" />
+          <Image width={250} height={200} src="/images/logo/AL FANAR COMPANY.png" className='w-32 h-20' alt="AL FANAR COMPANY Logo" />
+          <Image width={250} height={200} src="/images/logo/AL GHANDI AUTO.png" className='w-30 h-20' alt="AL GHANDI AUTO Logo" />
+          <Image width={250} height={200} src="/images/logo/AL HARAMAIN MEDICAL COMPLEX.jpg" className='w-30 h-20' alt="AL HARAMAIN MEDICAL COMPLEX Logo" />
+          <Image width={250} height={200} src="/images/logo/AL HATAB BAKERY.png" className='w-30 h-20' alt="AL HATAB BAKERY Logo" />
+          <Image width={250} height={200} src="/images/logo/Al Majdouie.png" className='w-30 h-20' alt="Al Majdouie Logo" />
+          <Image width={250} height={200} src="/images/logo/Al metals.jpg" className='w-30 h-20' alt="Al metals Logo" />
+          <Image width={250} height={200} src="/images/logo/Anjum.jpg" className='w-30 h-20' alt="Anjum Logo" />
+          <Image width={250} height={200} src="/images/logo/ARABIAN INTERNATIONAL COMPANY.jfif" className='w-30 h-20' alt="ARABIAN INTERNATIONAL COMPANY Logo" />
+          <Image width={250} height={200} src="/images/logo/Arabian Metal Industires.JPG" className='w-30 h-20' alt="Arabian Metal Industires Logo" />
+          <Image width={250} height={200} src="/images/logo/avjzz8axdsrdvrubf4hq.webp" className='w-30 h-20' alt="EI Engineering Group Logo" />
+          <Image width={250} height={200} src="/images/logo/Aztracon.jpg" className='w-30 h-20' alt="Aztracon Logo" />
+          <Image width={250} height={200} src="/images/logo/Badan Agricultural.jpg" className='w-30 h-20' alt="Badan Agricultural Logo" />
+          <Image width={250} height={200} src="/images/logo/bindajim_co_logo.jfif" className='w-30 h-20' alt="bindajim co Logo" />
+          <Image width={250} height={200} src="/images/logo/Carrier.png" className='w-30 h-20' alt="Carrier Logo" />
+          <Image width={250} height={200} src="/images/logo/CGC.KW_BIG.png" className='w-30 h-20' alt="CGC.KW_BIG Logo" />
+          <Image width={250} height={200} src="/images/logo/changan.JPG" className='w-30 h-20' alt="changan Logo" />
+          <Image width={250} height={200} src="/images/logo/Chrysler.webp" className='w-30 h-20' alt="Chrysler Logo" />
+          <Image width={250} height={200} src="/images/logo/Daewoo_E&C_CI_(eng).svg.png" className='w-28 h-16' alt="DaewooE&CCI Logo" />
+          <Image width={250} height={200} src="/images/logo/Dammam Pharma.png" className='w-28 h-16' alt="Dammam Pharma Logo" />
+          <Image width={250} height={200} src="/images/logo/download (3).jpeg" className='w-40 h-20' alt="Alesayi Logo" />
+          <Image width={250} height={200} src="/images/logo/Dr. Bassam Al-Hemsi Medical Cebte.png" className='w-28 h-16' alt="Dr. Bassam Al-Hemsi Medical Cebte Logo" />
+          <Image width={250} height={200} src="/images/logo/eram engineering.jpg" className='w-28 h-16' alt="Eram Engineering Logo" />
+          <Image width={250} height={200} src="/images/logo/GS.png" className='w-28 h-16' alt="GS Logo" />
+          <Image width={250} height={200} src="/images/logo/honda.webp" className='w-28 h-16' alt="Honda Logo" />
+          <Image width={250} height={200} src="/images/logo/Hyundai_Heavy_Industries-Logo.wine.svg" className='w-28 h-16' alt="Hyundai Heavy Industries Logo" />
+          <Image width={250} height={200} src="/images/logo/images.jpg" className='w-28 h-16' alt="Images Logo" />
+          <Image width={250} height={200} src="/images/logo/Jamal 1.png" className='w-28 h-16' alt="Jamal 1 Logo" />
+          <Image width={250} height={200} src="/images/logo/Juffali.png" className='w-28 h-16' alt="Juffali Logo" />
+          <Image width={250} height={200} src="/images/logo/Lexus.png" className='w-28 h-16' alt="Lexus Logo" />
+          <Image width={250} height={200} src="/images/logo/liebherr.JPG" className='w-28 h-16' alt="Liebherr Logo" />
+          <Image width={250} height={200} src="/images/logo/logo with logistic en.jpg" className='w-28 h-16' alt="Logistic Logo" />
+          <Image width={250} height={200} src="/images/logo/Madarek.jpeg" className='w-28 h-16' alt="Madarek Logo" />
+          <Image width={250} height={200} src="/images/logo/MAYYAR UNITED Support Services.png" className='w-28 h-16' alt="MAYYAR UNITED Support Services Logo" />
+          <Image width={250} height={200} src="/images/logo/MercedesBenz.jpg" className='w-28 h-16' alt="Mercedes Benz Logo" />
+          <Image width={250} height={200} src="/images/logo/Mesc.png" className='w-28 h-16' alt="Mesc Logo" />
+          <Image width={250} height={200} src="/images/logo/Movenpick-new-logo-916x515.jpg" className='w-28 h-16' alt="Movenpick Logo" />
+          <Image width={250} height={200} src="/images/logo/Mtex.png" className='w-28 h-16' alt="Mtex Logo" />
+          <Image width={250} height={200} src="/images/logo/Naqua_logo.png" className='w-28 h-16' alt="Naqua Logo" />
+          <Image width={250} height={200} src="/images/logo/samsung heavy industries.png" className='w-42 h-20' alt="Samsung Logo" />
+          <Image width={250} height={200} src="/images/logo/Pannon Work.jpg" className='w-28 h-16' alt="Pannon Work Logo" />
+          <Image width={250} height={200} src="/images/logo/pngegg.png" className='w-28 h-16' alt="Pngegg Logo" />
+          <Image width={250} height={200} src="/images/logo/pngwing.com.png" className='w-28 h-16' alt="Pngwing Logo" />
+          <Image width={250} height={200} src="/images/logo/Prodar 2.png" className='w-28 h-16' alt="Prodar 2 Logo" />
+          <Image width={250} height={200} src="/images/logo/Pwc.png" className='w-28 h-16' alt="PWC Logo" />
+          <Image width={250} height={200} src="/images/logo/Qassim_University_logo.svg.png" className='w-28 h-16' alt="Qassim University Logo" />
+          <Image width={250} height={200} src="/images/logo/Sakura.png" className="w-32 h-28" alt="Sakura Logo" />
+          <Image width={250} height={200} src="/images/logo/Samsung SDI.jpg" className="w-28 h-16" alt="Samsung SDI Logo" />
+          <Image width={250} height={200} src="/images/logo/samsung-engineering3687.logowik.com.webp" className="w-42   h-24" alt="Samsung Engineering Logowik Logo" />
+          <Image width={250} height={200} src="/images/logo/samsung.png" className="w-28 h-16" alt="Samsung Logo" />
+          <Image width={250} height={200} src="/images/logo/sasung engineering.png" className="w-28 h-16" alt="Sasung Engineering Logo" />
+          <Image width={250} height={200} src="/images/logo/Saudi Master Baker.JPG" className="w-28 h-16" alt="Saudi Master Baker Logo" />
+          <Image width={250} height={200} src="/images/logo/Saudi Paper Group.jpg" className="w-28 h-16" alt="Saudi Paper Group Logo" />
+          <Image width={250} height={200} src="/images/logo/saudibio-logo-201x90@2x.png" className="w-28 h-16" alt="Saudibio Logo" />
+          <Image width={250} height={200} src="/images/logo/Savage-Logo.jpg" className="w-28 h-16" alt="Savage Logo" />
+          <Image width={250} height={200} src="/images/logo/Schneider-Electric-logo-jpg-.png" className="w-28 h-16" alt="Schneider Electric Logo" />
+          <Image width={250} height={200} src="/images/logo/Siemens-logo-500x281.png" className="w-28 h-16" alt="Siemens Logo" />
+          <Image width={250} height={200} src="/images/logo/tenas.jpg" className="w-28 h-16" alt="Tenas Logo" />
+          <Image width={250} height={200} src="/images/logo/Teyseer Motors WLL.jpg" className="w-28 h-16" alt="Teyseer Motors WLL Logo" />
+          <Image width={250} height={200} src="/images/logo/Tulip Inn.png" className="w-28 h-16" alt="Tulip Inn Logo" />
+          <Image width={250} height={200} src="/images/logo/United Motors Group.png" className="w-28 h-16" alt="United Motors Group Logo" />
+          <Image width={250} height={200} src="/images/logo/URE Industrial.jpg" className="w-28 h-16" alt="URE Industrial Logo" />
+          <Image width={250} height={200} src="/images/logo/Venus.png" className="w-28 h-16" alt="Venus Logo" />
+          <Image width={250} height={200} src="/images/logo/Westin.png" className="w-28 h-16" alt="Westin Logo" />
+          <Image width={250} height={200} src="/images/logo/WPPCO.png" className="w-28 h-16" alt="WPPCO Logo" />
         </div>
       </section>
     </div>

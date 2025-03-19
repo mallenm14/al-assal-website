@@ -102,7 +102,7 @@ const Careers = () => {
        
         <div className='flex flex-col h-full  overflow-y-auto'>
               {
-            sampleData.map(({id, position, location, datePosted, requirements}, index) => (
+            sampleData.map(({id, position, location}, index) => (
                 <div onClick={() => setselectedJob(id)} key={index} className='border border-gray-300 py-2 px-5 bg-white w-full placeholder:text-gray-500 text-gray-700 shadow-md mt-5 cursor-pointer'>
                     <h4 className='text-lg'>{position}</h4>
                     <p className='text-sm'>{location}</p>

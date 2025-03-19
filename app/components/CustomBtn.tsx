@@ -7,7 +7,7 @@ type Props = {
     className? : string
 }
 
-const CustomBtn : React.FC<Props> = ({onClick, children, className}) => {
+const CustomBtn : React.FC<Props> = ({ children, className}) => {
   return (
     <button className={`${className}`}>
       {children}

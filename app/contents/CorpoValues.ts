@@ -1,6 +1,6 @@
 
 
-export default [
+const CorpoValues = [
     {
         title : "Honesty and integrity are the core values of our company",
         body : "We always keep our candidates and clients confidential and adhere to the highest ethical standards in the recruitment industry. The company ensures that we always exceed the expectations of our customers and continuous improvement is the basis of our philosophy."
@@ -15,5 +15,6 @@ export default [
         body : "AL ASSAL offers clients cost effective solutions that provide flexibility and affordability to recruit the right worker."
     },
 
-
 ]
+
+export default CorpoValues

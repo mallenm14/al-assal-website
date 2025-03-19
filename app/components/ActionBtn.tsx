@@ -16,7 +16,7 @@ const colorClass = {
     clear: "bg-gray-200 hover:bg-white text-black/90 py-2 px-4 font-bold shadow-lg",
 }
 
-const ActionBtn : React.FC<Props> = ({color, clickHandler, className, children}) => {
+const ActionBtn : React.FC<Props> = ({color, className, children}) => {
 
   return (
     <button  className={`${colorClass[color]} ${className} cursor-pointer`}>

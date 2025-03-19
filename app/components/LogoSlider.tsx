@@ -1,6 +1,4 @@
-"use client"; // Only needed for Next.js App Router
-
-import { useState, useEffect } from "react";
+import Image from "next/image";
 
 const images = [
   "/images/logo/ABDUL LATIF JAMEEL HOSPITAL.png",
@@ -79,7 +77,9 @@ export default function LogoSlider() {
 <div className="w-full overflow-hidden py-10">
   <div className="logos-slide flex gap-5 w-max whitespace-nowrap animate-slide">
     {[...images, ...images].map((image, i) => (
-      <img
+      <Image
+        width={100}
+        height={100}
         key={i}
         src={image}
         alt={`Image ${i}`}

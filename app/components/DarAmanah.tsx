@@ -1,5 +1,5 @@
 import React from 'react'
-import ActionBtn from './ActionBtn'
+import Image from 'next/image'
 
 const DarAmanah = () => {
   return (
@@ -14,9 +14,15 @@ const DarAmanah = () => {
           Visit Dar Amanah
         </a>
       </div>
-      <div className='w-1/2 flex flex-col'>
-      <img src="/images/dar-amanah/dar-amanah-logo-2.png" alt="" className='object-cover' />
-      <img src="/images/dar-amanah/dar-amanah-2.jpg" alt="" className='object-cover' />
+      <div className='w-1/2 h-full flex flex-col justify-center items-center'>
+      <div className=' h-1/2 w-full'>
+      <Image unoptimized={true} width={250} height={200} src="/images/dar-amanah/dar-amanah-2.jpg" alt="" className='object-cover w-full h-full' />
+      
+      </div>
+      <div className='h-1/3 w-full'>
+        <Image unoptimized={true} width={250} height={250} src="/images/dar-amanah/dar-amanah-logo-2.png" alt="" className='object-cover w-full ' />
+      </div>
+      
       
       </div>
     </div>

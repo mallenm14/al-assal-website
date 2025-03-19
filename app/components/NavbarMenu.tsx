@@ -20,7 +20,7 @@ const NavbarMenu = () => {
             <NavLinks/>
             <li><Link href={'/contact-us'}>Contact Us</Link></li>
             <li>
-            <CustomBtn className="flex gap-2 bg-white rounded-2xl px-2 py-1 items-center border border-secondary-pale text-secondary text-base"><img src={'/united-kingdom.png'} className='w-5 h-5' alt="flag"/><span>English</span></CustomBtn>
+            <CustomBtn className="flex gap-2 bg-white rounded-2xl px-2 py-1 items-center border border-secondary-pale text-secondary text-base"><Image width={30} height={30} src={'/united-kingdom.png'} className='w-5 h-5' alt="flag"/><span>English</span></CustomBtn>
           </li>
         </ul>
         

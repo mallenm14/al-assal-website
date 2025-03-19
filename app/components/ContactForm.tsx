@@ -13,7 +13,7 @@ const ContactForm = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    let newErrors = { email: "", message: "" };
+    const newErrors = { email: "", message: "" }; // FOR REVISION : change to let variable later
 
     if (!form.email) newErrors.email = "Email is required.";
     if (!form.message) newErrors.message = "Message is required.";
@@ -41,7 +41,7 @@ const ContactForm = () => {
             name="name"
             value={form.name}
             onChange={handleChange}
-            className="w-full p-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-tertiary rounded"
+            className="w-full p-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-tertiary rounded bg-gray-200 placeholder:text-gray-400"
             placeholder="Name"
           />
         </div>
@@ -52,7 +52,7 @@ const ContactForm = () => {
             name="email"
             value={form.email}
             onChange={handleChange}
-            className="w-full p-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-tertiary rounded placeholder:text-gray-400"
+            className="w-full p-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-tertiary rounded bg-gray-200 placeholder:text-gray-400"
             placeholder="Email"
           />
           {errors.email && <p className="text-red-500 text-sm">{errors.email}</p>}
@@ -64,7 +64,7 @@ const ContactForm = () => {
             name="message"
             value={form.message}
             onChange={handleChange}
-            className="w-full p-2 border rounded resize-none focus:outline-none focus:ring-2 focus:ring-tertiary"
+            className="w-full p-2 border rounded resize-none focus:outline-none focus:ring-2 focus:ring-tertiary bg-gray-200 placeholder:text-gray-400"
             placeholder="Message"
             rows={4}
           />

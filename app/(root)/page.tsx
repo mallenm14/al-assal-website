@@ -3,12 +3,12 @@ import ActionBtn from '../components/ActionBtn'
 import IntroPanel from '../components/IntroPanel'
 import PageHeading from '../components/PageHeading'
 import WhoWeAre from '../contents/WhoWeAre'
-import Section from '../components/Section'
 import ImageHolder from '../components/ImageHolder'
 import IndustryImages from '../contents/IndustryImages'
 import CustomBtn from '../components/CustomBtn'
 import Link from 'next/link'
 import LogoSlider from '../components/LogoSlider'
+import Image from 'next/image'
 
 const Home = () => {
   return (
@@ -21,11 +21,11 @@ const Home = () => {
             </h1>
 
             <p className='text-secondary-dark text-lg text-center lg:text-left lg:w-1/3  lg:text-xl xl:text-2xl'>
-            Hiring isn’t just about filling a role—it’s about matching the right person with the right team. 
+            Hiring isn&apos;t just about filling a role—it&apos;s about matching the right person with the right team. 
             </p>
             <p className='text-lg xl:text-2xl font-bold text-secondary'>Let us help you make the ideal connection!</p>
             <input type="text" className='py-3 px-5 bg-white w-3/4 lg:w-96 placeholder:text-gray-500 text-gray-700 shadow-md mt-16' placeholder='Search Jobs'/>
-            <ActionBtn color='primary' className='text-xl px-6 py-3 lg:py-5 lg:px-10 relative flex gap-5'>Apply Now <img src="/arrow-right.svg" alt="arrow-right" /></ActionBtn>
+            <ActionBtn color='primary' className='text-xl px-6 py-3 lg:py-5 lg:px-10 relative flex gap-5'>Apply Now <Image width={30} height={30} src="/arrow-right.svg" alt="arrow-right" /></ActionBtn>
         </div>
       </section>
 
@@ -68,8 +68,8 @@ const Home = () => {
       <PageHeading>What We Do</PageHeading>
       
       <div className='flex h-[70vh]'>
-        <div className='w-1/3 h-full overflow-hidden'>
-          <img src="/images/about/pexels-cottonbro-5989932.jpg" alt="" className='object-cover' />
+        <div className='w-1/3 h-full overflow-hidden relative'>
+          <Image fill src="/images/about/pexels-cottonbro-5989932.jpg" alt="" className='object-cover absolute' />
         </div>
         <div className='w-2/3 h-full flex flex-col px-24 justify-evenly'>
         <h4 className='text-3xl text-primary font-bold'>
@@ -93,26 +93,29 @@ const Home = () => {
          <CustomBtn className='border border-gray-900 text-gray-900 hover:bg-primary hover:border-primary hover:text-white py-3 px-2 w-52 text-lg'><Link href={'/process'}>Read Our Processing</Link></CustomBtn>
         </div>
       </div>
-      <div className='flex h-[20vh] w-full my-5 gap-5'>
+      <div className='flex h-[20vh] w-full my-5 gap-5 pt-10'>
         <div className='relative w-1/4 h-full overflow-hidden '>
-        <img src="/images/about/Mam Arlene Picture.jpg" alt="" className='object-cover saturate-150' />
+        <Image fill src="/images/about/Mam Arlene Picture.jpg" alt="" className='object-cover saturate-150' />
         </div>
         <div className='relative w-1/4 h-full overflow-hidden'>
-          <img 
+          <Image 
+          fill
           src="/images/about/homepic2.jpg" 
           alt="" 
           className="w-full h-full object-cover saturate-150"
           />
         </div>
         <div className='relative  w-1/4 h-full'>
-          <img 
+          <Image 
+            fill
             src="/images/about/homepic4.jpg" 
             alt="" 
             className="w-full h-full object-cover saturate-150"
             />
         </div>
         <div className='relative  w-1/4 h-full'>
-        <img 
+        <Image 
+            fill
             src="/images/about/homepic5.jpg" 
             alt="" 
             className="w-full h-full saturate-180 "
@@ -134,8 +137,8 @@ const Home = () => {
 
       <section className='w-full max-w-[2560px] mx-auto bg-secondary-dark h-[40vh] flex flex-col justify-center items-center gap-5'>
           <h4 className='text-3xl text-gray-200'>Looking For a Job or Talent?</h4>
-          <p className='text-2xl text-gray-200'>Let's Talk!</p>
-          <p className='text-xl text-gray-200'>Whether you're seeking your next opportunity or the perfect candidate, we're here to help. Reach out and let's connect!</p>
+          <p className='text-2xl text-gray-200'>Let&apos;s Talk!</p>
+          <p className='text-xl text-gray-200'>Whether you&apos;re seeking your next opportunity or the perfect candidate, we&apos;re here to help. Reach out and let&apos;s connect!</p>
           <Link href={'/contact-us'} className='text-2xl text-gray-200 py-5 px-10 border border-gray-300 my-5 cursor-pointer hover:bg-white hover:text-secondary font-bold'>Contact Us</Link>
       </section>
 

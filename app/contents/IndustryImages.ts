@@ -1,4 +1,4 @@
-export default [
+const IndustryImages = [
     {
         src:"/images/stocks/manufacturing.jpg", alt:"manufacturing", name : "MANUFACTURING"
     },
@@ -51,4 +51,6 @@ export default [
     {
       src:"/images/stocks/xavi-cabrera-hEoW7ngY28s-unsplash(amusement).jpg", alt:"Amusement image by Xavi Cabrera from Unsplash" , name : "AMUSEMENT"
     }
-]
+];
+
+export default IndustryImages

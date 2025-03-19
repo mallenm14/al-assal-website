@@ -7,6 +7,7 @@ import Logo from './Logo'
 import CustomBtn from "./CustomBtn";
 import ActionBtn from "./ActionBtn";
 import { useEffect } from 'react'
+import Image from 'next/image'
 
 const Navbar = () => {
 
@@ -32,7 +33,7 @@ const Navbar = () => {
         </ul>
         <ul className='hidden lg:flex gap-5 items-center justify-center'>
           <li>
-            <CustomBtn className="flex gap-2 bg-white rounded-2xl px-2 py-1 border border-secondary-dark text-secondary"><img src={'/united-kingdom.png'} className='w-5 h-5' alt="flag"/><span>English</span></CustomBtn>
+            <CustomBtn className="flex gap-2 bg-white rounded-2xl px-2 py-1 border border-secondary-dark text-secondary"><Image width={30} height={30} src={'/united-kingdom.png'} className='w-5 h-5' alt="flag"/><span>English</span></CustomBtn>
           </li>
           <li>
             <Link href={'/contact-us'}><ActionBtn color="secondary">Contact Us</ActionBtn>

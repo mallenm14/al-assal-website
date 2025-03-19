@@ -1,6 +1,6 @@
 import PageHeading from '@/app/components/PageHeading'
-import { FunctionComponent } from 'react'
 import React from 'react'
+import Image from 'next/image'
 
 const Process = () => {
   
@@ -31,7 +31,7 @@ Our documentation and processing employees have extensive experience. Once a can
             <div className='grid grid-cols-4 grid-rows-4 text-sm gap-2 p-2'>
               <div className='col-span-4 flex row-span-2 gap-2'>
                 <div className='w-2/5 border border-gray-400 px-5 py-4'><p className='text-primary pb-5 text-start'>Day 1</p>
-                <p>Acceptance / signing of "Offer of Employment" (Immediately upon hiring / selection)</p></div>
+                <p>Acceptance / signing of &ldquo;Offer of Employment&rdquo;; (Immediately upon hiring / selection)</p></div>
                 <div className='w-3/5 border border-gray-400 px-5 py-4'>
                   <p className='text-primary pb-5 text-start'>Day 2 - Day 10</p>
                   <p className=''>Medical Examination. Medical exam can only be undertaken once passport is obtained. Applicants with passports can proceed for the examination at once. Those who are without passports may take the medical on the 4th or 6th day. A medical result is obtained within 5 to 6 days.</p>
@@ -94,20 +94,18 @@ Our documentation and processing employees have extensive experience. Once a can
          
         </div>
       </section>
-      <section className='w-[70vw] mx-auto h-[30vh]'>
+      <section className='w-[70vw] mx-auto min-h-[30vh]'>
         <h4 className='text-lg font-bold text-secondary py-10'>Notes: </h4>
         <p className='text-gray-900'>1. The Foregoing schedule can be implemented on time as soon as all the verified documents are available.</p>
         <p className='text-gray-900'>2. If an applicant has a valid passports, Authenticated documents as required by the Royal Embassy of Saudi Arabia for visa issuance, processing time can be shortened to ten (10) working days or less.</p>
       </section>
-      <section className='w-[70vw] mx-auto h-[50vh]'>
-        <div className='flex flex-col lg:flex-row py-10 w-full h-full gap-10'>
-          <div className='w-1/2 h-full bg-primary relative overflow-hidden'>
-          <img src="/images/about/seminar.jpg" alt="" className='object-cover absolute saturate-150 ' />
-          </div>
-          <div className='w-1/2 h-full'>
-            <h5 className='text-lg font-bold text-primary py-10'>PRE-DEPARTURE ORIENTATION SEMINAR</h5>
-            <p className='text-gray-900 text-lg'>Our company provides the mandatory orientation seminar to our departing workers and professionals prior to their flight schedule. It aimed to orient departing migrant workers with basic information that are most beneficial to them, e.g. work standards, general profile of the country of destination, stages of the OFW’s life abroad, health & safety, travel tips, airport procedure, and government programs & services. The orientation-seminars are country-specific and in some cases, skill-specific.</p>
-          </div>
+      <section className='w-[70vw] mx-auto min-h-[50vh] flex flex-col lg:flex-row'>
+        <div className='flex-1 p-10'>
+          <Image height={500} width={500} src="/images/about/seminar.jpg" alt="" className='object-cover saturate-150 w-full h-full' />
+        </div>
+        <div className='flex-1 p-10'>
+          <h5 className='text-lg font-bold py-10 text-primary'>PRE-DEPARTURE ORIENTATION SEMINAR</h5>
+          <p className='text-gray-900 text-lg'>Our company provides the mandatory orientation seminar to our departing workers and professionals prior to their flight schedule. It aimed to orient departing migrant workers with basic information that are most beneficial to them, e.g. work standards, general profile of the country of destination, stages of the OFW’s life abroad, health & safety, travel tips, airport procedure, and government programs & services. The orientation-seminars are country-specific and in some cases, skill-specific.</p>
         </div>
       </section>
     </div>

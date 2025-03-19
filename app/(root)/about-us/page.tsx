@@ -1,30 +1,18 @@
 import React from 'react'
-import Image from 'next/image'
 import PageHeading from '@/app/components/PageHeading'
 import CorpoValues from '@/app/contents/CorpoValues'
-import IntroPanel from '@/app/components/IntroPanel'
-import ActionBtn from '@/app/components/ActionBtn'
 import DarAmanah from '@/app/components/DarAmanah'
+import Image from 'next/image'
 
 const AboutUs = () => {
   return (
     <div className='min-h-screen flex flex-col w-full pt-18 overflow-x-hidden'>
-      {/* <section className=' w-full max-w-[2560px] h-[80vh] bg-[url(/images/about/AAMI.jpg)] bg-cover bg-center relative'>
-        <div className='bg-gradient-to-br from-black/80 via-black/60 to-transparent w-full h-full absolute'>
-        <div className='max-w-screen mx-auto pt-30 px-5 md:px-16 lg:pt-40 flex flex-col gap-5 items-center lg:items-start'>
-          <h1 className='text-5xl font-roboto font-extrabold text-gray-300 text-center'>Al Assal Manpower Inc.</h1>
-          <h2 className='text-3xl font-roboto font-extrabold text-center md:text-5xl lg:text-left lg:text-6xl lg:w-3/4 xl:w-1/2 text-gray-100'>
-            Committed in providing an exceptional level of recruitment services
-          </h2>
-        </div>                                                                                                                                                                                                
-        </div>
-      </section> */}
       <section className='w-full max-w-[2560px] mx-auto bg-white'>
         <div className='h-[50vh] w-full overflow-hidden relative flex'>
           <div className='h-full w-full bg-secondary absolute -skew-x-20 -translate-x-1/2 z-10'></div>
           <p className='w-1/2 px-10 lg:px-16 h-full flex justify-center items-center lg:text-3xl text-gray-100 font-bold z-20'>Committed in providing an exceptional level of recruitment services</p>
           <div className='w-2/3 h-full relative'>
-          <img src="/images/about/AAMI.jpg" alt="Al Assal Recruitment Team" className='absolute m-auto right-[-9999px] left-[-9999px] top-[-9999px] bottom-[-9999px] brightness-90' /></div>
+          <Image fill src="/images/about/AAMI.jpg" alt="Al Assal Recruitment Team" className='absolute m-auto right-[-9999px] left-[-9999px] top-[-9999px] bottom-[-9999px] brightness-90 object-cover' /></div>
         </div>
       </section>
       
@@ -47,26 +35,33 @@ const AboutUs = () => {
 
       <section className='w-full max-w-[2560px] py-20 px-16 lg:px-24 bg-[#E7E7E7]'>
         <div className='w-[70vw] mx-auto flex flex-col lg:flex-row gap-5 lg:gap-10'>
-        <div className='w-full flex-1 bg-white max-h-[400px] shadow-lg'>
-          <img className='h-1/2 w-full brightness-90 saturate-120 grow-0' src="/images/about/vision.jpg" alt="Al Assal Recruitment Team" />
-          <p className='h-1/2 w-full px-5 py-3 text-gray-900 pt-10'>Our team of highly trained and efficient professionals expertly manages every aspect of manpower mobilization, screening, documentation, and recruitment</p>
+        <div className='flex-1 bg-white max-h-[400px] shadow-lg'>
+          <div className='h-[200px] w-full bg-secondary relative'>
+          <Image fill className='absolute brightness-90 saturate-120 grow-0 object-cover' src="/images/about/vision.jpg" alt="Al Assal Recruitment Team" />
+          </div>
+     
+          <p className='h-1/2 w-full px-5 py-2 text-gray-900 pt-10'>Our team of highly trained and efficient professionals expertly manages every aspect of manpower mobilization, screening, documentation, and recruitment</p>
         </div>
         <div className='w-full flex-1 bg-white max-h-[400px] overflow-hidden shadow-lg'>
-          <img className='h-1/2 w-full object-cover brightness-90 saturate-120' 
-          src="/images/about/slide_2.jpg" 
-          alt="Al Assal Recruitment Team" />
-          <p className='h-1/2 w-full px-5 py-3 text-gray-900 pt-10'>
+        <div className='h-[200px] w-full bg-secondary relative'>
+          <Image fill className='absolute brightness-90 saturate-120 grow-0 object-cover'  src="/images/about/slide_2.jpg"  alt="Al Assal Recruitment Team" />
+          </div>
+          <p className='h-1/2 w-full px-5 py-2 text-gray-900 pt-10'>
           We empower our employees with opportunities for growth in commerce and information technology, ensuring continuous innovation and a competitive edge in service delivery.
           </p>
         </div>
 
         <div className='w-full flex-1 bg-white max-h-[400px] shadow-lg'>
-          <img className='h-1/2 w-full brightness-90 saturate-120' src="/images/about/slide_1.jpg" alt="Al Assal Recruitment Team" />
-          <p  className='h-1/2 w-full px-5 py-3 text-gray-900 pt-10'>We accelerate the development of high-quality workspaces and continuously enhance processes to boost productivity.</p>
+        <div className='h-[200px] w-full bg-secondary relative'>
+          <Image fill className='absolute brightness-90 saturate-120 grow-0 object-cover' src="/images/about/slide_1.jpg" alt="Al Assal Recruitment Team" />
+          </div>
+          <p  className='h-1/2 w-full px-5 py-2 text-gray-900 pt-10'>We accelerate the development of high-quality workspaces and continuously enhance processes to boost productivity.</p>
         </div>
         <div className='w-full flex-1 bg-white max-h-[400px] shadow-lg'>
-        <img className='h-1/2 w-full object-cover brightness-90 saturate-120' src="/images/about/slide_4.jpg" alt="Al Assal Recruitment Team" />
-          <p  className='h-1/2 w-full px-5 py-3 text-gray-900 pt-10'>Preparing and equipping candidates to meet the evolving manpower needs of our clients.</p>
+        <div className='h-[200px] w-full bg-secondary relative'>
+          <Image fill className='absolute brightness-90 saturate-120 grow-0 object-cover' src="/images/about/slide_4.jpg" alt="Al Assal Recruitment Team" />
+          </div>
+          <p  className='h-1/2 w-full px-5 py-2 text-gray-900 pt-10'>Preparing and equipping candidates to meet the evolving manpower needs of our clients.</p>
         </div>
         </div>
 
@@ -98,7 +93,7 @@ const AboutUs = () => {
         </div>
         <div className='col-span-1 row-span-2 bg-white shadow-lg px-10 py-5 flex flex-col justify-evenly'>
           <h5 className='text-xl font-bold text-primary'>Technology</h5>
-          <p className='text-base text-gray-900'>Al Assal utilizes a proactive assessment tool to accurately evaluate a candidate's suitability for the role.</p>
+          <p className='text-base text-gray-900'>Al Assal utilizes a proactive assessment tool to accurately evaluate a candidate&apos;s suitability for the role.</p>
         </div>
         <div className='col-span-1 row-span-2 bg-white shadow-lg px-10 py-5 flex flex-col justify-evenly'>
         <h5 className='text-xl font-bold text-primary'>Delivery Capability</h5>
