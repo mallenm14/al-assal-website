@@ -6,8 +6,11 @@ const ContactUs = () => {
   return (
     <div className=' flex flex-col w-full max-w-[2560px] pt-18'>
       <section className='w-full max-w-[2560px] mx-auto bg-white'>
-        <div className='h-[70vh] w-full overflow-hidden relative flex flex-col lg:flex-row'>
-          <div className='h-1/2 lg:h-full w-full bg-secondary-dark absolute lg:-skew-x-20 lg:-translate-x-1/2 lg:z-10'></div>
+     
+        <div className='h-[70vh] w-full overflow-hidden relative flex flex-col lg:flex-row relative'>
+          <div className='h-1/2 lg:h-full w-full bg-secondary-strong absolute lg:-skew-x-20 lg:-translate-x-1/2 lg:z-10'>
+          <div className='absolute bg-[repeating-linear-gradient(to_bottom_left,transparent_300px,#607189_1000px)] w-full h-full opacity-20 pointer-events-none'></div>
+          </div>
           
           <div className='w-2/3 px-16 lg:px-32 h-full flex lg:justify-center items-center text-gray-100 font-bold z-20 flex-col gap-5'>
             

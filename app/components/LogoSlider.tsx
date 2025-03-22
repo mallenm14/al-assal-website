@@ -78,7 +78,7 @@ export default function LogoSlider() {
   <div className="logos-slide flex gap-5 w-max whitespace-nowrap animate-slide">
     {[...images, ...images].map((image, i) => (
       <Image
-        width={100}
+        width={150}
         height={100}
         key={i}
         src={image}

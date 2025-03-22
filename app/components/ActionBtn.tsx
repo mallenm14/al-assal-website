@@ -10,7 +10,7 @@ type Props = {
 }
 
 const colorClass = {
-    primary: "bg-primary hover:bg-primary-strong text-white py-2 px-4 font-bold shadow-lg",
+    primary: "bg-primary hover:bg-primary-dark text-white py-2 px-4 font-bold shadow-lg",
     tertiary: "bg-tertiary hover:bg-tertiary-strong text-white py-2 px-4 font-bold shadow-lg",
     secondary: "bg-secondary hover:bg-secondary-strong text-white py-2 px-4 font-bold shadow-lg",
     clear: "bg-gray-200 hover:bg-white text-black/90 py-2 px-4 font-bold shadow-lg",

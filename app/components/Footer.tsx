@@ -4,7 +4,7 @@ import Image from 'next/image';
 const Footer = () => {
 
   return (
-    <footer className='w-full max-w-[2560px] flex flex-col gap-5 pt-10 px-10 bg-secondary text-gray-300'>
+    <footer className='w-full max-w-[2560px] flex flex-col gap-5 pt-10 px-10 bg-secondary-dark text-gray-100'>
         <div className='flex flex-col lg:flex-row gap-10 lg:gap-36'>
             <div className='flex gap-5 flex-1'>
                 <Image unoptimized width={50} height={50} className='shrink-0 w-20 h-20' src="/logo.png" alt="Logo"  />
@@ -18,7 +18,7 @@ const Footer = () => {
                     <p className='text-lg'>Connect With Us</p>
                     <p>Finding the right people is our business</p>
                     <div className='flex gap-5'>
-                    <Image src="/facebook-logo-fill.svg" alt="facebook logo" width={30} height={10} />
+                    <a href="https://www.facebook.com/profile.php?id=100083376518939" target='_blank'><Image src="/facebook-logo-fill.svg" alt="facebook logo" width={30} height={10} /></a>
                     <Image src="/linkedin-logo-fill.svg" alt="linkedin logo" width={30} height={10} />
                     </div>
                     

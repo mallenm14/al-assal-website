@@ -9,7 +9,9 @@ const Services = () => {
     <div className='min-h-screen flex flex-col w-full bg-white overflow-x-hidden pt-18'>
         <section className='w-full max-w-[2560px] mx-auto bg-white'>
         <div className='h-[50vh] w-full overflow-hidden relative flex'>
-          <div className='h-full w-full bg-secondary absolute -skew-x-20 -translate-x-1/2 z-10'></div>
+          <div className='h-full w-full bg-secondary-strong absolute -skew-x-20 -translate-x-1/2 z-10'>
+          <div className='absolute bg-[repeating-linear-gradient(to_bottom_right,transparent_300px,#607189_1000px)] w-full h-full opacity-10 pointer-events-none -skew-12'></div>
+          </div>
           <p className='w-1/2 px-10 lg:px-16 h-full flex justify-center items-center lg:text-3xl text-gray-100 font-bold z-20'>Comprehensive Recruitment Solutions Tailored to Industry Needs</p>
           <div className='w-2/3 h-full relative '>
           <Image  unoptimized={true} fill src="/images/about/Picture5.jpg" alt="Al Assal Recruitment Team" className='object-cover absolute m-auto right-[-9999px] left-[-9999px] top-[-9999px] bottom-[-9999px]' /></div>
@@ -63,7 +65,8 @@ const Services = () => {
         <p className='text-lg text-gray-900'>The company prides itself on its ability to deliver specific solutions to difficult and highly complex recruitment challenges, whatever the sector is. Emphasis is placed on having a thorough insight into a Client’s organization, culture, business goals and objectives. Once these are understood fully, the search for the right Candidate can begin. The prime objective being to find the Candidate who is not only the best for the job but, more importantly, the ‘best-fit’ as well.</p>
         </div>
       </section>
-      <section className='w-full bg-[#e7e7e7] my-10'>
+      <section className='w-full bg-[#e7e7e7] my-10 relative overflow-hidden'>
+      <div className='absolute bg-[repeating-linear-gradient(to_bottom_right,transparent_300px,#607189_100px)] w-full h-full opacity-10 pointer-events-none -skew-x-40'></div>
         <PageHeading>Processing and Documentation Procedures</PageHeading>
         <div className=' w-[70vw] mx-auto flex flex-col justify-center items-center gap-10 pb-20'>
         <p className='text-lg text-gray-900'>We guarantee that the necessary travel documents are processed quickly Passports, medical permits, visas, employment permits, and contracts. We will assist with ticket issuance and travel arrangements. We will update the client’s of the selected workers documents on time and inform you of your selected workers departure schedule.</p>
