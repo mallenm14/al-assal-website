@@ -19,9 +19,10 @@ const AboutUs = () => {
         </div>
       </section>
       
-      <section className='w-full max-w-[2560px] mx-auto pb-20 bg-[#E7E7E7] relative'>
+      <section className='w-full min-h-[50vh] bg-[#e7e7e7] relative overflow-hidden flex flex-col items-center justify-center'>
       <div className='absolute bg-[repeating-linear-gradient(to_bottom_right,transparent_300px,#607189_800px)] w-full h-full opacity-5 pointer-events-none'></div>
-        <PageHeading>About Us</PageHeading>
+      <div className='absolute'>
+      <PageHeading>About Us</PageHeading>
         <div className='w-[70vw] mx-auto flex flex-col lg:flex-row gap-20 justify-center'>
           
           <div className='w-full lg:w-1/3 flex flex-col p-5 lg:p-10 items-center shadow-lg bg-white slidedown'>
@@ -34,11 +35,13 @@ const AboutUs = () => {
               <p className='text-sm lg:text-lg text-gray-900 text-center py-5'>To be the best and most preferred employment service provider in the Philippines by both foreign employers and Filipino workers and professionals.</p>
           </div>
         </div>
+      </div>
       </section>
 
 
 
       <section className='w-full max-w-[2560px] py-20 px-16 lg:px-24 bg-[#E7E7E7]'>
+        
         <div className='w-[70vw] mx-auto flex flex-col lg:flex-row gap-5 lg:gap-10'>
         <div className='flex-1 bg-white max-h-[400px] shadow-lg slidedown'>
           <div className='h-[200px] w-full bg-secondary relative'>
@@ -72,9 +75,10 @@ const AboutUs = () => {
 
       </section>
 
-      <section className='w-full min-h-[90vh] bg-secondary-strong relative overflow-hidden'>
+      <section className='w-full min-h-[90vh] bg-secondary-strong relative overflow-hidden flex flex-col items-center justify-center'>
+      <div className='absolute bg-[repeating-linear-gradient(to_bottom_left,transparent_300px,#607189_1000px)] w-full h-full opacity-20 pointer-events-none'></div>
+      <div className=' absolute'>
       <PageHeading className='text-white'>Our Core Competencies</PageHeading>
-      {/* <div className='absolute bg-[repeating-linear-gradient(to_bottom_left,transparent_300px,#607189_1000px)] w-full h-full opacity-20 pointer-events-none'></div> */}
       <div className='flex flex-col lg:grid grid-cols-3 grid-rows-6 gap-5 px-10 pb-20 lg:px-30 w-[80vw] mx-auto'>
         <div className='col-span-1 row-span-6 bg-gray-100 shadow-lg px-10 py-5 flex flex-col justify-evenly slideright'>
           <h5 className='text-xl font-bold text-secondary'>Experience</h5>
@@ -103,6 +107,23 @@ const AboutUs = () => {
         <p className='text-base text-gray-900'>A utilization of two decade skills and management expertise.</p>
         </div>
       </div>
+      </div>
+      </section>
+
+      <section className='w-screen mx-auto bg-secondary relative'>
+      <div className='absolute bg-[repeating-linear-gradient(to_bottom_right,transparent_300px,#607189_800px)] w-full h-full opacity-5 pointer-events-none'></div>
+        <PageHeading className='text-white'>Our Corporate Values</PageHeading>
+    
+
+        <div className='flex flex-col gap-5 xl:gap-10 items-center justify-center px-10 pb-20 lg:px-30 w-[70vw] mx-auto'>
+            {
+              CorpoValues.map(({title, body}, index) => <div className='w-full px-16 space-y-5' key={index}>
+                <h3 className='text-xl font-bold text-gray-200'>{title}</h3>
+                <p className='text-lg text-gray-300'>{body}</p>
+              </div>)
+            }
+            
+          </div>
       </section>
 
       <section className='w-full bg-white py-10'>
